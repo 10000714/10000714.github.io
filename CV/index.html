@@ -1,0 +1,97 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>TelloFustéWD</title>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+body, html{ margin:0; padding:0;}
+.header{ border-top:1px solid white;background:white; color:#333; height:100%; width:100%; font-family: 'Lobster', cursive; text-align:center}
+.menu{ height:80px; width:100%; background:#333; color:white; text-align:center}
+.wrapper{ width:80%; padding-top:20px; margin-left: 10%; padding-top: 8%; padding-bottom: 6%}
+
+.fixed{position:fixed; top:0}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+posicionarMenu();
+
+$(window).scroll(function() {    
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+    var altura_del_header = $('.header').outerHeight(true);
+    var altura_del_menu = $('.menu').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header){
+        $('.menu').addClass('fixed');
+        $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
+    } else {
+        $('.menu').removeClass('fixed');
+        $('.wrapper').css('margin-top', '0');
+    }
+}
+
+</script>
+</head>
+
+<body>
+<div class="header">
+	<!-- <img src="img/imagen.jpg" width="100%" height="100%"> -->
+	hgf jhfgf
+</div>
+<div class="menu">
+		<ul>
+			<li><a href="#index">Porfolio</a></li>
+			<li><a href="#curriculum">Curriculum</a></li>
+			<li><a href="contacto.html">Contacto</a></li>		
+		</ul></div>
+<div class="wrapper">
+	<div class="porfolio">
+		<div style="width: 100%">
+			<div class="webs1">
+				<a href="http://maxpowerwebdesign.esy.es/" class="titulo">MAX POWER WEB DESIGN</a> <br/><br/>
+				<a href="http://maxpowerwebdesign.esy.es/"><img src="img/MaxPower.jpg" width="400" title="MAX POWER WEB DESIGN" alt="MAX POWER WEB DESIGN"> </a>
+				<p class="text"> 
+					Web escolar desarrollada con Wordpress totalmente funcional y operativa. También, a parte de lo que ya se puede apreciar en la web, desarrollamos una tienda online pero decidimos quitarla porque, al ser un proyecto escolar, no teníamos el stock.
+				</p>
+			</div>
+			<div class="webs2">
+				<a href="http://www.darumayaj23.esy.es" class="titulo">ULTIM ADEU</a> <br/><br/>
+				<a href="http://www.darumayaj23.esy.es"><img src="img/ultimAdeu.jpg" width="400" title="ULTIM ADEU" alt="ULTIM ADEU"> </a>
+				<p class="text"> 
+					Web escolar desarrollada con Wordpress totalmente funcional y operativa. También, a parte de lo que ya se puede apreciar en la web, desarrollamos una tienda online pero decidimos quitarla porque, al ser un proyecto escolar, no teníamos el stock.
+				</p>
+			</div>
+		</div>
+		<div style="width: 100%">
+			<div class="webs1">
+				<a href="http://www.darumayaj23.esy.es" class="titulo">DARUMAYA</a> <br/><br/>
+				<a href="http://www.darumayaj23.esy.es"><img src="img/darumaya.jpg" width="400" title="Darumaya" alt="Darumaya"> </a>
+				<p class="text"> 
+					Web escolar desarrollada con Wordpress totalmente funcional y operativa. También, a parte de lo que ya se puede apreciar en la web, desarrollamos una tienda online pero decidimos quitarla porque, al ser un proyecto escolar, no teníamos el stock.
+				</p>
+			</div>
+			<div class="webs2">
+				<a href="http://webland.ml/" class="titulo">WEBLAND	</a> <br/><br/>
+				<a href="http://webland.ml/"><img src="img/WebLand.jpg" width="400" title="WEBLAND" alt="WEBLAND"> </a>
+				<p class="text"> 
+					Web escolar desarrollada con Wordpress totalmente funcional y operativa. También, a parte de lo que ya se puede apreciar en la web, desarrollamos una tienda online pero decidimos quitarla porque, al ser un proyecto escolar, no teníamos el stock.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
